@@ -6,7 +6,7 @@ import {
 import axios from "axios";
 
 const getWeather = async (event) => {
-  const WEATHER_API_KEY = "4a0d716697311de4ada9a7f39829810c";
+  const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
   try {
     const city = event.queryStringParameters?.city;
